@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    font-size: 32px;
+}
+
+.parent{
+    background: blue;
+    height: 60vh;
+
+    /* flex */
+    display: flex;
+    /* flex-wrap:wrap; */
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.parent div{
+    background: grey;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+
+    /* flex */
+    display: flex;
+    /* horizontally center */
+    justify-content: center;
+    /* vertically center */
+    align-items: center; 
+}
+
+.parent > div:nth-child(odd){
+    background: red;
+}
+.item4{
+    align-self: flex-end;
+}
+.item6{
+    align-self: flex-start;
+}
+.item1{
+    order: 1;
+}
+.item9{
+    align-self: -1;
+}
+
